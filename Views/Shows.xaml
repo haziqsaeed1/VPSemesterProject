@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="PassportLogin.Views.Shows"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PassportLogin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="DeepSkyBlue">
+
+    <Grid>
+        <RelativePanel>
+            <ListView Name="InventoryList"
+                  SelectionMode="Single"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True" Height="1920" Width="1080">
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="10,10" Width="100" Foreground="black" Height="1067" Text="List Of Shows"></TextBlock>
+                            <TextBlock Margin="50,50" Width="100" Foreground="White" Height="989" ><Run Text="ID"/><LineBreak/><Run/><LineBreak/><Run Text="1"/><LineBreak/><Run/><LineBreak/><Run Text="2"/><LineBreak/><Run/><LineBreak/><Run Text="3"/><LineBreak/><Run/><LineBreak/><Run Text="4"/><LineBreak/><Run/><LineBreak/><Run Text="5"/><LineBreak/><Run/><LineBreak/><Run Text="6"/><LineBreak/><Run/><LineBreak/><Run Text="7"/><LineBreak/><Run/><LineBreak/><Run Text="8"/><LineBreak/><Run/><LineBreak/><Run Text="9"/><LineBreak/><Run/><LineBreak/><Run Text="10"/></TextBlock>
+                            <TextBlock Margin="50,50" Width="200" Foreground="White" ><Run Text="Name"/><LineBreak/><Run/><LineBreak/><Run Text="The Sopranos"/><LineBreak/><Run/><LineBreak/><Run Text="The Wire"/><LineBreak/><Run/><LineBreak/><Run Text="Breaking Bad"/><LineBreak/><Run/><LineBreak/><Run Text="Game of Thrones"/><LineBreak/><Run/><LineBreak/><Run Text="Mad Men"/><LineBreak/><LineBreak/><Run Text="The Twilight Zone"/><LineBreak/><Run/><LineBreak/><Run Text="The Simpsons"/><LineBreak/><Run/><LineBreak/><Run Text="Seinfeld"/><LineBreak/><Run/><LineBreak/><Run Text="Lost"/><LineBreak/><Run/><LineBreak/><Run Text="Saturday Night"/></TextBlock>
+                            <TextBlock Margin="50,50" Width="80" Foreground="White" ><Run Text="Date"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/><LineBreak/><Run/><LineBreak/><Run Text="Airing"/></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+
+            </ListView>
+        </RelativePanel>
+        <Button x:Name="BackToUserListButton" Content="Back to User List" Click="Button_Restart_Click" Margin="10,600,0,0" Foreground="White" Background="#22B14C"/>
+    </Grid>
+</Page>
+
